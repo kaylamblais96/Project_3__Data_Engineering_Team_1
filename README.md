@@ -33,6 +33,7 @@ Madeline Rondino
 - [Yelp Fusion API](https://docs.developer.yelp.com/docs/fusion-intro) was leveraged to obtain local restaurants within each of the 10 cities. The results were filtered for name, location, categories, ratings, price and reviews. 
 - The process of creating the DataFrame and exporting to a csv file was done using python. **(YelpAPI_Code.ipynb)** to create *Yelp_data.csv*. 
 
+## Method of Choice
 - SQL (Structured Query Language) was the choice selected for building the necessary data base for several reasons. Reference to Jupyter Notebook **(Project_3_SQL_Query.sql)**
     - SQL is known for its proven stability
     - widely used
