@@ -34,6 +34,8 @@ Madeline Rondino
 - The process of creating the DataFrame and exporting to a csv file was done using python. **(YelpAPI_Code.ipynb)** to create *Yelp_data.csv*. 
 
 ## Method of Choice
+![ERD Image](https://github.com/kaylamblais96/Project_3__Data_Engineering_Team_1/blob/main/ERD%20Image.JPG)
+
 - SQL (Structured Query Language) was the choice selected for building the necessary data base for several reasons. Reference to Jupyter Notebook **(Project_3_SQL_Query.sql)**
     - SQL is known for its proven stability
     - widely used
