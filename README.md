@@ -30,15 +30,16 @@ Madeline Rondino
 ## Visual Crossing/Weather Data
 - Weather data for each of the cities was obtained and downloaded via a csv file on [Visual Crossing](https://www.visualcrossing.com/). 
 - The 10 csv files were cleaned, prepped and merged using python **(city_weather.ipynb)** to export *all_city_weather.csv*.
-
+ ![WeatherData workflow](https://github.com/kaylamblais96/Project_3__Data_Engineering_Team_1/blob/savi/Image/WeatherData%20workflow.png)
 
 ## Yelp Data
 - [Yelp Fusion API](https://docs.developer.yelp.com/docs/fusion-intro) was leveraged to obtain local restaurants within each of the 10 cities. The results were filtered for name, location, categories, ratings, price and reviews. 
 - The process of creating the DataFrame and exporting to a csv file was done using python. **(YelpAPI_Code.ipynb)** to create *Yelp_data.csv*. 
+ ![YelpData workflow](https://github.com/kaylamblais96/Project_3__Data_Engineering_Team_1/blob/savi/Image/YelpData%20workflow.png)
 
 ## Method of Choice
 ![ERD Image](https://github.com/kaylamblais96/Project_3__Data_Engineering_Team_1/blob/main/ERD%20Image.JPG)
-
+![POSTGRESQL. workflow](https://github.com/kaylamblais96/Project_3__Data_Engineering_Team_1/blob/savi/Image/POSTGRESQL.%20workflow.png)
 - SQL (Structured Query Language) was the choice selected for building the necessary data base for several reasons. Reference to Jupyter Notebook **(Project_3_SQL_Query.sql)**
     - SQL is known for its proven stability
     - widely used
