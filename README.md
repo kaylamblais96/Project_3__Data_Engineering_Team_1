@@ -19,23 +19,27 @@ Madeline Rondino
 ### Census Data
 - [Census Business Builder](https://cbb.census.gov/cbb/#view=map&industries=00&clusterName=Custom+Industries&geoType=state&dataVariable=179&dashboardVars=15-17-33-64&centerX=-10802692&centerY=4568679&level=4&theme=default&dynHeader=Custom+Region) Primary Variable is State, Secondary Variable is Consumer Spending, and Secondary Categories is Percent working age (25 to 64 years) 
     - MapData.csv is a list of all US states, estimate of consumer expenditures per household as well as the percent of the working population age 25-64. This is the list from where the team captured the top 5 and bottom 5 affluent states. This was derived from the estimate of consumer expenditures per household. Top 5 States in order is DC, Maryland, Massachusetts, New Jersey & Washington. Bottom 5 States in order is West Virginia, Mississippi, Louisiana, Arkansas & Alabama. 
+    ![MapData workflow](https://github.com/kaylamblais96/Project_3__Data_Engineering_Team_1/blob/savi/Image/MapData%20workflow.png)
     - SUB-IP-EST2023-POP.csv is a list exported from [City and Town Population Totals 2020-2023](https://www.census.gov/data/tables/time-series/demo/popest/2020s-total-cities-and-towns.html) for the United States from census.gov was downloaded to get the population for each city in the US. The highest populated city from the top 5 and bottom 5 affulent States were noted. Washington city, District of Columbia, Boston city, Massachusetts, Newwark City, New Jersey, Baltimore city, Maryland, Seattle city, Washington, Huntsville city, Alabama, Little Rock city, Arkansas, Charleston city, West Virginia, New Orleans city, Louisiana and Jackson city, Mississippi.
+    ![PopulationData workflow](https://github.com/kaylamblais96/Project_3__Data_Engineering_Team_1/blob/savi/Image/PopulationData%20workflow.png)
     - Together these files were imported into a python for creating the necessary  DataFrame **(state_pop_complete.ipynb)** to export *max_population_cities.csv* & *cleaned_state_data.csv*.
+    ![FinalCensusData output](https://github.com/kaylamblais96/Project_3__Data_Engineering_Team_1/blob/savi/Image/FinalCensusData%20ouput.png)
     - For each of the State a detailed view report was exported to a csv file to include [demographic & socioeconomic characteristics](https://cbb.census.gov/cbb/#view=report&industries=00&clusterName=Custom+Industries&geoType=state&dataVariable=179&dashboardVars=15-17-33-64&centerX=-8597980&centerY=4694599&level=7&theme=default&geoId=24&dynHeader=Custom+Region). These 20 csv files were clean and prepped using python.**Consumer_Spending_and_Socioeconomic_Characteristics_by_State.ipynb** & **State_Affluency.ipynb** to export *Top5.csv* & *Bottom5.csv* 
 
 
 ## Visual Crossing/Weather Data
 - Weather data for each of the cities was obtained and downloaded via a csv file on [Visual Crossing](https://www.visualcrossing.com/). 
 - The 10 csv files were cleaned, prepped and merged using python **(city_weather.ipynb)** to export *all_city_weather.csv*.
-
+ ![WeatherData workflow](https://github.com/kaylamblais96/Project_3__Data_Engineering_Team_1/blob/savi/Image/WeatherData%20workflow.png)
 
 ## Yelp Data
 - [Yelp Fusion API](https://docs.developer.yelp.com/docs/fusion-intro) was leveraged to obtain local restaurants within each of the 10 cities. The results were filtered for name, location, categories, ratings, price and reviews. 
 - The process of creating the DataFrame and exporting to a csv file was done using python. **(YelpAPI_Code.ipynb)** to create *Yelp_data.csv*. 
+ ![YelpData workflow](https://github.com/kaylamblais96/Project_3__Data_Engineering_Team_1/blob/savi/Image/YelpData%20workflow.png)
 
 ## Method of Choice
-![ERD Image](https://github.com/kaylamblais96/Project_3__Data_Engineering_Team_1/blob/main/ERD%20Image.JPG)
-
+![ERD Image](https://github.com/kaylamblais96/Project_3__Data_Engineering_Team_1/blob/savi/Image/ERD%20Image.png)
+![POSTGRESQL. workflow](https://github.com/kaylamblais96/Project_3__Data_Engineering_Team_1/blob/savi/Image/POSTGRESQL.%20workflow.png)
 - SQL (Structured Query Language) was the choice selected for building the necessary data base for several reasons. Reference to Jupyter Notebook **(Project_3_SQL_Query.sql)**
     - SQL is known for its proven stability
     - widely used
