@@ -38,7 +38,7 @@ Madeline Rondino
  ![YelpData workflow](https://github.com/kaylamblais96/Project_3__Data_Engineering_Team_1/blob/savi/Image/YelpData%20workflow.png)
 
 ## Method of Choice
-![ERD Image](https://github.com/kaylamblais96/Project_3__Data_Engineering_Team_1/blob/main/ERD%20Image.JPG)
+![ERD Image](https://github.com/kaylamblais96/Project_3__Data_Engineering_Team_1/blob/savi/Image/ERD%20Image.png)
 ![POSTGRESQL. workflow](https://github.com/kaylamblais96/Project_3__Data_Engineering_Team_1/blob/savi/Image/POSTGRESQL.%20workflow.png)
 - SQL (Structured Query Language) was the choice selected for building the necessary data base for several reasons. Reference to Jupyter Notebook **(Project_3_SQL_Query.sql)**
     - SQL is known for its proven stability
